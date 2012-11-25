@@ -1,10 +1,10 @@
 <div class="row">
-  <div class="span8 offset4">
+  <div class="span8">
     <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: "well" }) do |f| %>
       <%= devise_error_messages! %>
 
       <fieldset>
-        <legend>Register</legend>
+        <legend>Edit Account</legend>
           <%= f.input :email %>
           <hr>
           
@@ -23,5 +23,7 @@
     <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %>.</p>
 
     <%= link_to "Back", :back %>
+  </div>
+  <div class="span3 well pull-right">
   </div>
 </div>
