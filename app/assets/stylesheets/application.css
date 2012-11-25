@@ -20,3 +20,23 @@ body {
 .well {
 	margin-top: 20px;
 }
+#footer {
+	height: 60px;
+
+}
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -6em;
+}
+.footer, .push {
+	height: 6em;
+	background-color: #F5F5F5;
+}

@@ -14,7 +14,7 @@ Treebook::Application.routes.draw do
   root to: 'statuses#index'
 
   #Last route in routes.rb
-  match '*a', :to => 'error#routing'
+  #match '*a', :to => 'error#routing'
 
 
   # The priority is based upon order of creation:
