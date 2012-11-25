@@ -3,7 +3,6 @@ Treebook::Application.routes.draw do
 
   devise_scope :user do
     get "register", :to => "devise/registrations#new", as: :register
-    get "sign_up", :to => "devise/registrations#new"
 
     get "login", :to => "devise/sessions#new", as: :login
     get "logout", :to => "devise/sessions#destroy", as: :logout
@@ -15,7 +14,7 @@ Treebook::Application.routes.draw do
   root to: 'statuses#index'
 
   #Last route in routes.rb
-  #match '*a', :to => 'error#routing'
+  match '*a', :to => 'error#routing'
 
 
   # The priority is based upon order of creation:
