@@ -5,7 +5,7 @@ class CreateStatuses < ActiveRecord::Migration
       t.integer :user_id
       t.timestamps
     end
-  	add_index :statuses, :user_id
+    add_index("statuses", "user_id")
   end
 
 end
